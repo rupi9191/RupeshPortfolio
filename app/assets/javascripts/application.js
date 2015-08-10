@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(function() {
+  $('#myContact').click(function(){
+     $("body").animate({ scrollTop: $(document).height() }, 1000);
+  });
+
+})

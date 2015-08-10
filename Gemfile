@@ -44,4 +44,6 @@ group :development, :test do
 end
 
 gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem "font-awesome-rails"
 

@@ -11,13 +11,13 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <!--   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Rupesh</a>
+                </button> -->
+                <a class="navbar-brand" href="#">Blog</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,14 +27,21 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#projects">Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#" id="myContact">Contact</a>
                     </li>
+                    <li class="page-scroll">
+                        <%= link_to 'Resume', {:action => :resume, :controller => :home} %>
+                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
