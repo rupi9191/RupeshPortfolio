@@ -52,7 +52,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a  class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
+                <%= link_to '#project/index' do %>
+                       <a  class="portfolio-link" data-toggle="modal" data-target="#">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -61,6 +62,8 @@
                         <!-- <img src="img/portfolio/cabin.png" class="img-responsive" alt=""> -->
                         <%= image_tag("portfolio/cabin.png", :class => "img-responsive") %>
                     </a>
+                 <% end %>
+                  
                 </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
