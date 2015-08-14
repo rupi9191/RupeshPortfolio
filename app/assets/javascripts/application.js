@@ -18,5 +18,7 @@ $(function() {
   $('#myContact').click(function(){
      $("body").animate({ scrollTop: $(document).height() }, 1000);
   });
-
+$('.img-responsive').click(function(){
+	alert('fuck you');
+})
 })
