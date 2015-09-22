@@ -11,33 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150817132951) do
+ActiveRecord::Schema.define(version: 20150827191052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "names", force: :cascade do |t|
-    t.string   "firstname"
-    t.string   "lastname"
+  create_table "jobs", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.integer  "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string   "title"
-    t.string   "author"
-    t.date     "published_at"
-    t.text     "intro"
-    t.text     "extended"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string   "name"
-    t.decimal  "price",      precision: 12, scale: 2
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -48,20 +39,6 @@ ActiveRecord::Schema.define(version: 20150817132951) do
     t.string   "period"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "email"
-    t.string   "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "words", force: :cascade do |t|
-    t.string   "name"
-    t.text     "definition"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
