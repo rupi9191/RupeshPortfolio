@@ -21,4 +21,5 @@ $(function() {
 $('.img-responsive').click(function(){
 	//alert('fuck you');
 })
+
 })
